@@ -6,6 +6,7 @@ import Error from './pages/Error'
 import Books from './pages/Books'
 import SingleBook from './pages/SingleBook'
 import Navbar from './components/Navbar'
+import Social from "./components/Social"
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Route exact path="/books/:slug" component={SingleBook}/>
       <Route component={Error}/>
       </Switch>
+      <Social />
     </div>
   );
 }

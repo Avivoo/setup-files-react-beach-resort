@@ -1,20 +1,20 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import defaultImg from "../images/book1.jpg";
 import PropTypes from "prop-types";
+import { FaShekelSign } from "react-icons/fa";
 
 
 
 export default function Book({ book }) {
   
-  const { name, slug, images, price } = book;
+  const { name, slug, images, price, ages } = book;
 
   return (
     <article className="book">
       <div className="img-container">
-        <img src={images[0] || defaultImg} alt="bookie"></img>
+        <img src={images[0] || images[1]} alt="bookie"></img>
         <div className="price-top">
-          <h6>{price}</h6>
+          <h6>{price}<FaShekelSign size={10}/></h6>
           <p>SoftCover edition</p>
         </div>
         <Link to={`books/${slug}`} className="btn-primary book-link">
@@ -22,6 +22,7 @@ export default function Book({ book }) {
         </Link>
       </div>
       <p className="book-info">{name}</p>
+      <p className>ages:{ages-2} - {ages} for <b style={{color:"#6ca0dc"}}>boys</b> & <b style={{color:"#f8b9d4"}}>girls</b></p>
     </article>
   );
 }

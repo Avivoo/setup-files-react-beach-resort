@@ -4,6 +4,8 @@ import { FaAlignRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from '../images/logo.jpg'
 
+
+
 export default class Navbar extends Component {
   state = {
     isOpen: false,

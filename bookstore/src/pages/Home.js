@@ -9,7 +9,7 @@ export default function Home(){
     return (
       <>
       <Hero>
-        <Banner title="Personalized Books" subtitle="soft cover start from 29.90">
+        <Banner title="Personal Books" subtitle="Turn any child into a book hero">
           <Link to='/books' className="btn-primary">
           Our Books</Link>
         </Banner>

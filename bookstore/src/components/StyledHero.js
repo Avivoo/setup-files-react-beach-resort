@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import defaultImg from '../images/book2.jpg'
 
+const defaultImg = "https://www.naeyc.org/sites/default/files/styles/page_header_media_large/public/062019/juliaweek2sq2017_014.jpg?itok=MP9X0nFa&timestamp=1561405328"
 
 const StyledHero = styled.header`
 min-height: 60vh;

@@ -5,7 +5,7 @@
 }
 :root {
   --primaryColor: #62c05a;
-  --mainWhite: rgba(254, 213, 255, 0.973);
+  --mainWhite: rgba(248, 236, 248, 0.973);
   --offWhite: #f7f7f7;
   --mainBlack: #222;
   --mainGrey: #ececec;
@@ -94,7 +94,7 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem;
+  padding: 0.5rem 1rem;
   background: var(--offWhite);
   z-index: 1;
 }
@@ -111,6 +111,7 @@ h6 {
 .nav-icon {
   font-size: 1.5rem;
   color: var(--primaryColor);
+  
 }
 .nav-links {
   height: 0;
@@ -160,13 +161,13 @@ h6 {
 .defaultHero,
 .booksHero {
   min-height: calc(80vh - 66px);
-  background: url("./images/defaultBcg.jpg") center/cover no-repeat;
+  background: url("https://toppsta.com/media/thumbnails/large/Baby%20Books%20Blog%20Cover.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .booksHero {
-  background-image: url("./images/book2.jpg");
+  background-image: url("https://previews.123rf.com/images/inarik/inarik1804/inarik180400105/100137574-children-reading-books-babies-early-education-group-of-kids-one-year-old-boys-and-girls-isolated-ove.jpg");
   min-height: 60vh;
 }
 /* End of Hero */
@@ -193,6 +194,53 @@ h6 {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+/* FOOTER */
+
+#lab_social_icon_footer {
+  float: right; 
+  width: fit-content;
+  margin-right: 2rem;
+  }
+  
+  #lab_social_icon_footer a {
+    color: #333;
+  }
+  
+  .underIcon{color: #f8a16e;}
+  
+  #lab_social_icon_footer .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  
+  #lab_social_icon_footer .social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+    
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+  /*
+      Multicoloured Hover Variations
+  */
+  
+  #lab_social_icon_footer #social-fb:hover {
+    color: #3B5998;
+  }
+  
+  #lab_social_icon_footer #social-tw:hover {
+    color: #4099FF;
+  }
+  
+  #lab_social_icon_footer #social-ig:hover {
+    color: #d34836;
+  }
+  
+
 @media screen and (min-width: 576px) {
   .banner {
     padding: 2rem 3rem;
@@ -230,9 +278,7 @@ h6 {
 /* end of Title */
 
 /* services */
-.services {
-  padding: 5rem 0;
-}
+
 .services {
   background: var(--darkGrey);
   text-align: center;
@@ -275,7 +321,8 @@ h6 {
 /* featured books */
 
 .featured-books {
-  padding: 5rem 0;
+  padding: 1rem 0;
+  padding-bottom: 5rem;
 }
 .featured-books-center {
   width: 80vw;
@@ -383,7 +430,7 @@ h6 {
   }
 
 .single-book {
-  padding: 5rem 0 0 0;
+  padding: 2rem 0 0 0;
 }
 .single-book-images {
   width: 80vw;
@@ -394,14 +441,18 @@ h6 {
   grid-column-gap: 50px;
 }
 .single-book-images img {
-  width: 100%;
+  width: 60%;
+  height: 60%;
   display: block;
+}
+.single-book h5{
+  padding-left: 9rem;
 }
 .single-book-info {
   width: 80vw;
   display: grid;
   grid-template-columns: 1fr;
-  margin: 2rem auto;
+  margin: 0rem auto;
 }
 .desc,
 .info {
