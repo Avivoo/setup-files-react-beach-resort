@@ -62,7 +62,7 @@ export default class SingleBook extends Component {
     return (
       <>
         <StyledHero img={mainImg || images[1]}>
-          <Banner title={`${name} book`}>1
+          <Banner title={`${name} book`}>
             <Link to="/books" className="btn-primary">
               back to books
             </Link>
